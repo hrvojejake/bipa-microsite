@@ -1,4 +1,7 @@
+import { useBeautyBalls } from "../context/BeautyBallsContext";
+
 const Navbar = () => {
+  const { openMenu } = useBeautyBalls();
   return (
     <nav className="c-nav-cluse container">
       <div className="c-nav-cluse-wrap">
@@ -12,7 +15,7 @@ const Navbar = () => {
             className="c-nav-cluse-links-loreal"
           />
         </div>
-        <div className="js-menu-btn c-menu-btn"></div>
+        <div className="js-menu-btn c-menu-btn" onClick={openMenu}></div>
       </div>
     </nav>
   );

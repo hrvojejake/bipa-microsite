@@ -10,7 +10,11 @@ type BeautyBallsContext = {
   closeMenu: () => void;
 };
 
-const BeautyBallsContext = createContext({} as BeautyBallsContext);
+export const BeautyBallsContext = createContext({} as BeautyBallsContext);
+
+export function useBeautyBalls() {
+  return useContext(BeautyBallsContext);
+}
 
 export const BeautyBallsProvider = ({ children }: BeautyBallsProviderProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +29,8 @@ export const BeautyBallsProvider = ({ children }: BeautyBallsProviderProps) => {
         closeMenu
       }}
     >
-      {children}
       <Menu isOpen={isOpen} />
+      {children}
     </BeautyBallsContext.Provider>
   );
 };
