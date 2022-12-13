@@ -1,4 +1,5 @@
 import { useBeautyBalls } from "../context/BeautyBallsContext";
+import { Link } from 'react-router-dom'
 
 type MenuProps = {
   isOpen: boolean;
@@ -11,25 +12,22 @@ const Menu = ({ isOpen }: MenuProps) => {
       <div className="container">
         <a href="/" className="c-menu-content-logo">
           <img
-            src="/Portals/1-System/Skins/Remington/img/backgrounds/tvoja_bipa_logo.jpg"
+            src="/images/tvoja_bipa_logo.jpg"
             alt="Bipa"
           />
         </a>
         <div className="js-menu-btn-close c-menu-close-btn" onClick={closeMenu}>
-          zatvori
+          
         </div>
         <div className="c-menu-content">
           <div>
             <h6>MENU</h6>
-            <a className="c-menu-link" href="/beauty-boom/">
+            <Link className="c-menu-link" to={"/"} onClick={closeMenu}>
               Početna stranica
-            </a>
-            <a className="c-menu-link" href="/beauty-boom/nagrade">
-              Nagrade
-            </a>
-            <a className="c-menu-link" href="/beauty-boom/prijavi-se">
-              Prijavi se
-            </a>
+            </Link>
+            <Link className="c-menu-link" to={"/nagrade"} onClick={closeMenu}>
+            Nagrade
+            </Link>           
           </div>
           <div>
             <p>Zvuči lijepo, zar ne?</p>

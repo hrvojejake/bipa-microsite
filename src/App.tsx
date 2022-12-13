@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/store" element={<Products />} />
+        <Route path="/nagrade" element={<Products />} />
       </Routes>
     </BeautyBallsProvider>
   );
