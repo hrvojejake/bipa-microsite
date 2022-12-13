@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Dyson Airwrap complete  nickel-fuchsia",
+    "desc": "U 5 kuglica krije se sjajna prilika za tvoju kosu. Inovativni Dyson Airwrap uređaj suši i oblikuje tvoju kosu koristeći samo zrak, bez ekstremne topline. Pruža ti čvrste i raskošne kovrče i valove bez oštećivanja vlasi.",
+    "natuknice": [
+      "Coanda efekt za oblikovanje bez topline.",
+      "3 razine temperature i brzine.",
+      "Četke za zaglađivanje i volumen.",
+      "Praktična torbica za pohranu.",
+      "Za sve tipove kose."
+    ],
+    "imgUrl": "/images/dyson-new.png"
+  },
+  {
+    "id": 2,
+    "name": "Philips Lumea",
+    "desc": "Jedna sretna kupnja može ti pružiti čak 6 mjeseci glatke kože. Osvoji visoko kvalitetni Philips Lumia IPL uređaj za uklanjanje dlačica i priušti si tretman depilacije kao iz salona.",
+    "natuknice": [
+      "4 pametna nastavka za: tijelo, lice, bikini zonu i pazuhe.",
+      "SenseIQ tehnologija za personalizirano uklanjanje dlačica.",
+      "SmartSkin senzor za veću udobnost.",
+      "Pogodan za razne tipove dlačica i kože."
+    ],
+    "imgUrl": "/images/ipl-new.png"
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi Watch",
+    "desc": "Ovaj sat je i lijep i pametan. Pomoću napredne tehnologije prati tvoje tjelesne funkcije i pruža ti korisne informacije, a svojim modernim dizajnom uklopit će se u svaki tvoj outfit. Možda baš njega izvučeš nakon uspješne kupnje u BIPI.",
+    "natuknice": [
+      "Cjelodnevno praćenje otkucaja srca, stresa, razine energije i ciklusa spavanja.",
+      "Izdržljiva baterija koja traje do 12 dana uz uobičajenu upotrebu.",
+      "Automatski prepoznaje često korištene treninge.",
+      "Tanak i moderan dizajn s obnovljenim kućištem i zaslonom."
+    ],
+    "imgUrl": "/images/sat-new.png"
+  }
+]

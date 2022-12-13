@@ -1,5 +1,5 @@
 import { useBeautyBalls } from "../context/BeautyBallsContext";
-import { Link } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 type MenuProps = {
   isOpen: boolean;
@@ -11,23 +11,42 @@ const Menu = ({ isOpen }: MenuProps) => {
     <div className={`${isOpen ? "opened-menu" : "closed-menu"} l-menu js-menu`}>
       <div className="container">
         <a href="/" className="c-menu-content-logo">
-          <img
-            src="/images/tvoja_bipa_logo.jpg"
-            alt="Bipa"
-          />
+          <img src="/images/tvoja_bipa_logo.jpg" alt="Bipa" />
         </a>
-        <div className="js-menu-btn-close c-menu-close-btn" onClick={closeMenu}>
-          
-        </div>
+        <div
+          className="js-menu-btn-close c-menu-close-btn"
+          onClick={closeMenu}
+        ></div>
         <div className="c-menu-content">
           <div>
             <h6>MENU</h6>
-            <Link className="c-menu-link" to={"/"} onClick={closeMenu}>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "active c-menu-link" : "c-menu-link"
+              }
+              to={"/"}
+              onClick={closeMenu}
+            >
               Početna stranica
-            </Link>
-            <Link className="c-menu-link" to={"/nagrade"} onClick={closeMenu}>
-            Nagrade
-            </Link>           
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "active c-menu-link" : "c-menu-link"
+              }
+              to={"/nagrade"}
+              onClick={closeMenu}
+            >
+              Nagrade
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "active c-menu-link" : "c-menu-link"
+              }
+              to={"/prijavi-se"}
+              onClick={closeMenu}
+            >
+              Prijavi se
+            </NavLink>
           </div>
           <div>
             <p>Zvuči lijepo, zar ne?</p>

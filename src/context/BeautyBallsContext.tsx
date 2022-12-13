@@ -8,6 +8,8 @@ type BeautyBallsProviderProps = {
 type BeautyBallsContext = {
   openMenu: () => void;
   closeMenu: () => void;
+  jumpToSlide: number;
+  setJumpToSlide: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export const BeautyBallsContext = createContext({} as BeautyBallsContext);
@@ -18,6 +20,7 @@ export function useBeautyBalls() {
 
 export const BeautyBallsProvider = ({ children }: BeautyBallsProviderProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [jumpToSlide, setJumpToSlide] = useState(2);
 
   const openMenu = () => setIsOpen(true);
   const closeMenu = () => setIsOpen(false);
@@ -26,7 +29,9 @@ export const BeautyBallsProvider = ({ children }: BeautyBallsProviderProps) => {
     <BeautyBallsContext.Provider
       value={{
         openMenu,
-        closeMenu
+        closeMenu,
+        jumpToSlide,
+        setJumpToSlide
       }}
     >
       <Menu isOpen={isOpen} />
