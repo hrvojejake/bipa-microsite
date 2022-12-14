@@ -4,13 +4,13 @@ import SwiperCore, { Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useBeautyBalls } from "../context/BeautyBallsContext";
 
 SwiperCore.use([Navigation]);
 
 const Products = () => {
-  const [swiper, setSwiper] = useState(0);
+  const [swiper, setSwiper] = useState<React.SetStateAction<number>>(0);
   const { jumpToSlide } = useBeautyBalls();
 
   return (
@@ -21,7 +21,7 @@ const Products = () => {
         slidesPerView={1}
         loop={true}
         loopFillGroupWithBlank={true}
-        onSwiper={(swiper) => setSwiper(swiper)}
+        onSwiper={() => setSwiper(swiper)}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
