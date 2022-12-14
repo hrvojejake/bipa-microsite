@@ -8,7 +8,8 @@ type MenuProps = {
 const Menu = ({ isOpen }: MenuProps) => {
   const { closeMenu } = useBeautyBalls();
   return (
-    <div className={`${isOpen ? "opened-menu" : "closed-menu"} l-menu js-menu`}>
+    <div className="l-menu">
+      <div className={`${isOpen ? "opened-menu" : "closed-menu"} js-menu`}>
       <div className="container">
         <a href="/" className="c-menu-content-logo">
           <img src="/images/tvoja_bipa_logo.jpg" alt="Bipa" />
@@ -58,6 +59,7 @@ const Menu = ({ isOpen }: MenuProps) => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
