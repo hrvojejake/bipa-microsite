@@ -1,12 +1,25 @@
-import { useState } from "react";
+import { useFormik } from 'formik'
+
+type FormikConfig = { initialValues: 
+  {brojRacuna: string; 
+    ime: string; 
+    adresa: string; 
+    grad: string; 
+    dob: string; 
+    email: string;} }
 
 const Prijava = () => {
-  const [brojRacuna, setBrojRacuna] = useState<string>("");
-  const [ime, setIme] = useState<string>("");
-  const [adresa, setAdresa] = useState<string>("");
-  const [grad, setGrad] = useState<string>("");
-  const [dob, setDob] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
+
+  const formik = useFormik<FormikConfig>({
+    initialValues: {
+      brojRacuna: '',
+      ime: '',
+      adresa: '',
+      grad: '',
+      dob: '',
+      email: ''
+    }
+  })
 
   return (
     <div className="container">
@@ -20,7 +33,7 @@ const Prijava = () => {
             <input
               type="text"
               placeholder="broj računa (npr. 1234/123/1)*"
-              id="code"
+              id="brojRacuna"
               className="form-control"
               required={true}
               data-smk-msg="Obavezno polje"
@@ -36,7 +49,7 @@ const Prijava = () => {
             <input
               type="text"
               placeholder="ime i prezime*"
-              id="name"
+              id="ime"
               className="form-control"
               required={true}
               data-smk-msg="Obavezno polje"
@@ -50,7 +63,7 @@ const Prijava = () => {
             <input
               type="text"
               placeholder="adresa (npr. Ulica 5)*"
-              id="address"
+              id="adresa"
               className="form-control"
               required={true}
               data-smk-msg="Obavezno polje"
@@ -64,7 +77,7 @@ const Prijava = () => {
             <input
               type="text"
               placeholder="grad (npr. Zagreb)*"
-              id="city"
+              id="grad"
               className="form-control"
               required={true}
               data-smk-msg="Obavezno polje"
