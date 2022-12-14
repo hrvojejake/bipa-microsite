@@ -637,7 +637,7 @@ h3 {
 .c-item-desc li:before {
   content: "-";
   margin-right: 5px;
-  top: -8px;
+  top: -3px;
   font-size: 18px;
   left: -10px;
   position: absolute;
@@ -744,7 +744,7 @@ h3 {
 /* Prijava */
 .l-beautyball-prijava-title {
   max-width: 95%;
-  margin: 0 auto 20px auto;
+  margin: 50px auto 20px auto;
   color: #ec008c;
   font-size: 24px;
 }
@@ -788,13 +788,17 @@ h3 {
   margin: 0 auto 20px auto;
 }
 
+.c-submit-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #sendFormWithApi {
   text-transform: unset;
   padding: 7.5px 54px;
   border-radius: 20px;
   font-size: 19px;
   box-shadow: none;
-  float: right;
   border: 1px solid #ec008c;
   text-shadow: none;
   font-family: "Helvetica Neue LT Com", sans-serif;

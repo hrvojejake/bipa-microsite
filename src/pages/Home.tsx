@@ -113,12 +113,9 @@ const Home = () => {
             </div>
 
             <div className="l-beautyball-end-3">
-              <a
-                className="l-beautyball-end-3-link"
-                href="/beauty-boom/prijavi-se"
-              >
+              <Link className="l-beautyball-end-3-link" to={"/prijavi-se"}>
                 Prijavi se
-              </a>
+              </Link>
 
               <p className="l-beautyball-end-3-text">
                 Cijene izražene u eurima izračunate su prema tečaju 1 EUR =

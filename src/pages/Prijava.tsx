@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -33,7 +33,7 @@ const Prijava = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container l-prijavi-se">
       <p className="l-beautyball-prijava-title">
         Još jedan korak dijeli te od sudjelovanja.
       </p>
@@ -163,7 +163,7 @@ const Prijava = () => {
             )}
           </div>
 
-          <div className="col-12">
+          <div className="c-submit-wrap">
             <input id="sendFormWithApi" type="submit" value="Pošalji prijavu" />
           </div>
         </div>
