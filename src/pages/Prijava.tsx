@@ -151,17 +151,6 @@ const Prijava = () => {
 
         <div className="form-group row">
           <div className="col-12">
-            {/*<div id="msgIncomplete" className="alert alert-danger mobius-message" role="alert">Molimo Vas da unesete sva polja prije slanja</div>
-            <div id="code02" className="alert alert-danger mobius-message" role="alert">Došlo je do pogreške: web servis za spremanje prijava nije aktivan</div>
-            <div id="code03" className="alert alert-danger mobius-message" role="alert">Došlo je do pogreške: Vaš broj računa je već iskorišten</div>
-            <div id="code04" className="alert alert-danger mobius-message" role="alert">Došlo je do pogreške: unesene su pogrešne vrijednosti</div>
-            <div id="code05" className="alert alert-danger mobius-message" role="alert">Došlo je do pogreške: unijeli ste pogrešan format računa</div>
-            
-            <div id="msgRecap" className="alert alert-danger mobius-message" role="alert">Please fill in all required fields before sending.</div>
-            <div id="msgError" className="alert alert-danger mobius-message" role="alert">Došlo je do greške, molimo pokušajte ponovno</div>
-            <div id="msgSending" className="alert alert-warning mobius-message" role="alert">Prijava se šalje</div>
-            <div id="msgNewsletterSuccess" className="alert alert-success mobius-message">Success! If you are not registered yet, you will get an e-mail with which you can finalize your registration.</div>
-            <div id="msgNewsletterFailed" className="alert alert-danger mobius-message">Došlo je do greške</div>     */}
             {Object.keys(poruka).length !== 0 && (
               <div
                 id="msgOk"
