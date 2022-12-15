@@ -406,16 +406,16 @@ h3 {
 }
 .l-menu {
   background-color: #fef5f7;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   z-index: 10;
   padding-top: 20px;
   transition: 0.5s;
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 .closed-menu.l-menu {
   left: 100%;
